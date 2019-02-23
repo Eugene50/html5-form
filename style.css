@@ -1,0 +1,45 @@
+* {
+   border: solid 0.5px;
+}
+body {
+   padding: 100px;
+}
+
+.header-container {
+   display: flex;
+}
+ .header-table {
+    width: 75%;
+    display: flex;
+ }
+
+ .help-center {
+    width: 25%;
+ }
+ 
+ .table {
+    width: 70%;
+    margin: 20px;
+ }
+
+ .header-button {
+    width: 30%;
+    text-align: center;
+
+ }
+
+ .button {
+   width: 80%;
+   height: 40px;
+   margin: 6px;
+ }
+
+ .button-first {
+    background-image: url(img/place_order.png);
+    background-size: cover;
+ }
+
+ .button-second {
+    background-image: url(img/print_a_qoute.png);
+    background-size: cover;
+ }
