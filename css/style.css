@@ -1,0 +1,170 @@
+@import url(normalize.css);
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em; }
+
+body {
+  padding: 140px; }
+  body .container {
+    border: 0.5px solid #d4d4d4; }
+    body .container header {
+      border-bottom: 0.5px solid #d4d4d4; }
+      body .container header .header-container {
+        display: flex; }
+        body .container header .header-container .header-table {
+          width: 73%;
+          display: flex;
+          margin-left: 30px;
+          margin-right: 20px; }
+          body .container header .header-container .header-table .header-icon {
+            padding-top: 18px; }
+          body .container header .header-container .header-table .first-table {
+            width: 70%;
+            margin: 20px;
+            margin-top: 20px;
+            table-layout: fixed; }
+            body .container header .header-container .header-table .first-table caption, body .container header .header-container .header-table .first-table th {
+              text-align: left;
+              font-size: 0.7em; }
+            body .container header .header-container .header-table .first-table caption {
+              margin-bottom: 20px; }
+          body .container header .header-container .header-table .header-button {
+            display: flex;
+            flex-wrap: wrap;
+            width: 30%;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 15px;
+            margin-right: 20px;
+            margin-left: -28px;
+            border-right: 0.5px solid #d4d4d4; }
+            body .container header .header-container .header-table .header-button .button {
+              width: 75%;
+              height: 45px;
+              margin: 5px;
+              border-radius: 5%; }
+            body .container header .header-container .header-table .header-button .button-first {
+              background-image: url(/img/place_order.png);
+              background-size: cover; }
+            body .container header .header-container .header-table .header-button .button-second {
+              background-image: url(/img/print_a_qoute.png);
+              background-size: cover; }
+        body .container header .header-container .help-center {
+          width: 25%;
+          display: flex;
+          margin-left: -10px; }
+          body .container header .header-container .help-center .help-center-img {
+            padding-top: 20px;
+            width: 10%; }
+          body .container header .header-container .help-center .help-center-lorem {
+            padding: 15px;
+            padding-top: 20px;
+            padding-bottom: 7px;
+            width: 80%; }
+            body .container header .header-container .help-center .help-center-lorem p {
+              margin-bottom: 15px; }
+            body .container header .header-container .help-center .help-center-lorem :first-child {
+              font-weight: bold; }
+            body .container header .header-container .help-center .help-center-lorem :nth-child(3) {
+              font-weight: bold; }
+    body .container .first-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px; }
+      body .container .first-container div {
+        margin-bottom: 25px; }
+      body .container .first-container label {
+        margin: 30px; }
+      body .container .first-container h4 {
+        color: #9b9b9b;
+        font-size: 20px;
+        border-bottom-style: solid;
+        border-bottom-width: 0.5px; }
+      body .container .first-container .radio {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px; }
+      body .container .first-container .first-container-img {
+        padding: 5px;
+        cursor: pointer; }
+      body .container .first-container .btn-a:checked ~ label > .btn-a-img {
+        border: solid blue;
+        padding: 2px; }
+      body .container .first-container .btn-b:checked ~ label > .btn-b-img {
+        border: solid blue;
+        padding: 2px; }
+      body .container .first-container .btn-c:checked ~ label > .btn-c-img {
+        border: solid blue;
+        padding: 2px; }
+    body .container .second-container {
+      display: flex;
+      margin-top: 40px;
+      margin-bottom: 100px; }
+      body .container .second-container .custom-file-upload {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer; }
+      body .container .second-container input[type="file"] {
+        display: none; }
+      body .container .second-container .second-container-img {
+        width: 12.5%;
+        text-align: center; }
+      body .container .second-container .second-container-other {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 74%; }
+        body .container .second-container .second-container-other .delete-btn-hidden {
+          position: absolute;
+          clip: rect(0 0 0 0);
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          overflow: hidden; }
+        body .container .second-container .second-container-other .delete-btn-first:checked ~ table .second {
+          display: none; }
+        body .container .second-container .second-container-other .delete-btn-second:checked ~ table .third {
+          display: none; }
+        body .container .second-container .second-container-other p {
+          font-size: 23px;
+          margin-bottom: 40px;
+          color: #909090; }
+          body .container .second-container .second-container-other p span {
+            font-size: 13px;
+            margin-left: 7px;
+            color: #acacac; }
+        body .container .second-container .second-container-other .custom-file-upload {
+          width: 20%;
+          text-align: center;
+          color: #909090; }
+        body .container .second-container .second-container-other .second-table {
+          border: solid #c8c8c8 0.5px;
+          margin-top: 50px;
+          width: 93%;
+          table-layout: auto;
+          padding: 20px;
+          padding-top: 20px;
+          padding-left: 40px;
+          border-spacing: 10px; }
+          body .container .second-container .second-container-other .second-table th {
+            text-align: left;
+            font-size: 0.7em; }
+    body .container .third-container {
+      display: flex;
+      margin-top: 40px;
+      margin-bottom: 100px; }
+      body .container .third-container .third-container-img {
+        width: 12.5%;
+        text-align: center; }
+      body .container .third-container .third-container-other p {
+        font-size: 23px;
+        margin-bottom: 40px;
+        color: #909090; }
+      body .container .third-container .third-container-other :nth-child(2) {
+        border: solid;
+        width: 20%; }
