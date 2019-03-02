@@ -3,7 +3,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
    <title>HTML5-form</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                   <div class="header-icon">
                         <img src="img/your_order.png" alt="your order">
                   </div>
-                  <table class="table">
+                  <table class="first-table">
                         <caption>YOUR ORDER</caption>
                         <tr>
                            <th>ITEMS</th>
@@ -54,21 +54,73 @@
                <h4>SELECT WHAT YOU WANT TO TRANSLATE</h4>
             </div>
             <div>
-               <input type="radio" name="" id="">
-               <input type="radio" name="" id="">
-               <input type="radio" name="" id="">
+               <input type="radio" name="item-button" id="btn-a" class="btn-a radio">
+               <label for="btn-a">
+                  <img src="img/documents.png" alt="Documents" class="btn-a-img first-container-img">
+               </label>
+               <input type="radio" name="item-button" id="btn-b" class="btn-b radio">
+               <label for="btn-b">
+                  <img src="img/social_account.png" alt="Social Account" class="btn-b-img first-container-img">
+               </label>
+               <input type="radio" name="item-button" id="btn-c" class="btn-c radio">
+               <label for="btn-c">
+                  <img src="img/website.png" alt="Website" class="btn-c-img first-container-img">
+               </label>
             </div>
          </section>
 
          <section class="second-container">
-            <div>
+            <div class="second-container-img">
                <img src="img/1.png" alt="1">
+            </div>
+            <div class="second-container-other">
+               <p>Upload your documents <span>(Doc, Docx,Text, PDF, Markdown)</span></p>
+               <label for="file-upload" class="custom-file-upload">
+                  Upload a new file
+               </label>
+               <input id="file-upload" type="file"/>
+               <input type="checkbox" name="" id="delete-btn-first" class="delete-btn-first delete-btn-hidden">
+               <input type="checkbox" name="" id="delete-btn-second" class="delete-btn-second delete-btn-hidden">
+               <table class="second-table">
+                  <tr>
+                     <th>FILE NAME</th>
+                     <th>FILE SIZE</th>
+                     <th>NUMBER OF WORDS</th>
+                     <th>REMOVE</th>
+                  </tr>
+                  <tr class="second">
+                     <td>business_operations.docx</td>
+                     <td>78kb</td>
+                     <td>842</td>
+                     <td><label for="delete-btn-first"><img src="/img/basket.png" alt="basket"></label></td>
+                  </tr>
+                  <tr class="third">
+                     <td>business_financial.docx</td>
+                     <td>26kb</td>
+                     <td>2,326</td>
+                     <td><label for="delete-btn-second"><img src="/img/basket.png" alt="basket"></label></td>
+                  </tr>
+               </table>
             </div>
          </section>
 
          <section class="third-container">
-            <div>
+            <div class="third-container-img">
                <img src="img/2.png" alt="2">
+            </div>
+            <div class="third-container-other">
+               <p>Choose your languages pairings</p>
+               <p>from</p>
+               <select name="" id="">
+                  <option value="">English</option>
+               </select>
+               <p>to</p>
+               <select name="" id="">
+                  <option value="">Arabic</option>
+               </select>
+               <select name="" id="">
+                  <option value="">Kurdish</option>
+               </select>
             </div>
          </section>
 
