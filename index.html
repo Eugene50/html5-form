@@ -74,7 +74,7 @@
                <img src="img/1.png" alt="1">
             </div>
             <div class="second-container-other">
-               <p>Upload your documents <span>(Doc, Docx,Text, PDF, Markdown)</span></p>
+               <p class="title">Upload your documents <span>(Doc, Docx,Text, PDF, Markdown)</span></p>
                <label for="file-upload" class="custom-file-upload">
                   Upload a new file
                </label>
@@ -82,23 +82,24 @@
                <input type="checkbox" name="" id="delete-btn-first" class="delete-btn-first delete-btn-hidden">
                <input type="checkbox" name="" id="delete-btn-second" class="delete-btn-second delete-btn-hidden">
                <table class="second-table">
+                     <col width="250" valign="top">
                   <tr>
                      <th>FILE NAME</th>
                      <th>FILE SIZE</th>
                      <th>NUMBER OF WORDS</th>
-                     <th>REMOVE</th>
+                     <th class="delete-cell">REMOVE</th>
                   </tr>
                   <tr class="second">
                      <td>business_operations.docx</td>
                      <td>78kb</td>
                      <td>842</td>
-                     <td><label for="delete-btn-first"><img src="/img/basket.png" alt="basket"></label></td>
+                     <td class="delete-cell"><label for="delete-btn-first"><img src="/img/basket.png" alt="basket"></label></td>
                   </tr>
                   <tr class="third">
                      <td>business_financial.docx</td>
                      <td>26kb</td>
                      <td>2,326</td>
-                     <td><label for="delete-btn-second"><img src="/img/basket.png" alt="basket"></label></td>
+                     <td class="delete-cell"><label for="delete-btn-second"><img src="/img/basket.png" alt="basket"></label></td>
                   </tr>
                </table>
             </div>
@@ -109,24 +110,65 @@
                <img src="img/2.png" alt="2">
             </div>
             <div class="third-container-other">
-               <p>Choose your languages pairings</p>
-               <p>from</p>
-               <select name="" id="">
-                  <option value="">English</option>
-               </select>
-               <p>to</p>
-               <select name="" id="">
-                  <option value="">Arabic</option>
-               </select>
-               <select name="" id="">
-                  <option value="">Kurdish</option>
-               </select>
+               <p class="title">Choose your languages pairings</p>
+               <div class="third-container-other-block">
+                  <div class="third-container-other-block-first">
+                     <p class="subtitle">from</p>
+                     <p class="subtitle">to</p>
+                  </div>
+                  <div class="third-container-other-block-second">
+                     <ul class="languages-btn">
+                        <li>
+                           <select name="" id="">
+                              <option value="">English</option>
+                              <option value="">Arabic</option>
+                              <option value="">Kurdish</option>
+                           </select>
+                        </li>
+                     </ul>
+                     <ul class="languages-btn">
+                        <li>
+                           <select name="" id="">
+                              <option value="">Arabic</option>
+                              <option value="">Kurdish</option>
+                              <option value="">English</option>
+                           </select>
+                        </li>
+                        <li>
+                           <select name="" id="">
+                              <option value="">Kurdish</option>
+                              <option value="">English</option>
+                              <option value="">Arabic</option>
+                           </select>
+                        </li>
+                        <li><img src="/img/basket.png" alt="delete"></li>
+                        <li><button>Add</button></li>
+                     </ul>
+                  </div>
+               </div>
             </div>
          </section>
 
          <section class="fourth-container">
-            <div>
+            <div class="fourth-container-img">
                <img src="img/3.png" alt="3">
+            </div>
+            <div class="fourth-container-other">
+               <div><p class="title">Select your desired tone</p></div>
+               <ul class="input-list">
+                  <li>
+                     <input type="radio" id="radio-btn-first" class="radio-btn-first radio" name="fourth-container-other-radio">
+                     <label for="radio-btn-first"><img src="/img/friendly-btn.png" class="label-img radio-btn-first-img" alt=""></label>
+                  </li>
+                  <li>
+                     <input type="radio" id="radio-btn-second" class="radio-btn-second radio" name="fourth-container-other-radio">
+                     <label for="radio-btn-second"><img src="img/media-btn.png" class="label-img radio-btn-second-img" alt=""></label>
+                  </li>
+                  <li>
+                     <input type="radio" id="radio-btn-third" class="radio-btn-third radio" name="fourth-container-other-radio">
+                     <label for="radio-btn-third"><img src="/img/corporate-btn.png" class="label-img radio-btn-third-img" alt=""></label>
+                  </li>
+               </ul>
             </div>
          </section>
 
