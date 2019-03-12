@@ -32,7 +32,7 @@
 
                   </table>
                   <div class="header-button">
-                     <button class="button button-first"></button>
+                     <input type="submit" value="" class="button button-first">
                      <button class="button button-second"></button>
                   </div>
                </div>
@@ -70,7 +70,7 @@
          </section>
 
          <section class="second-container">
-            <div class="second-container-img">
+            <div class="container-img">
                <img src="img/1.png" alt="1">
             </div>
             <div class="second-container-other">
@@ -106,7 +106,7 @@
          </section>
 
          <section class="third-container">
-            <div class="third-container-img">
+            <div class="container-img">
                <img src="img/2.png" alt="2">
             </div>
             <div class="third-container-other">
@@ -117,69 +117,127 @@
                      <p class="subtitle">to</p>
                   </div>
                   <div class="third-container-other-block-second">
-                     <ul class="languages-btn">
-                        <li>
-                           <select name="" id="">
-                              <option value="">English</option>
-                              <option value="">Arabic</option>
-                              <option value="">Kurdish</option>
-                           </select>
-                        </li>
-                     </ul>
-                     <ul class="languages-btn">
-                        <li>
-                           <select name="" id="">
+                     <div class="select-wraper">
+                        <select name="language" id="" class="select">
+                           <option value="">English</option>
+                           <option value="">Arabic</option>
+                           <option value="">Kurdish</option>
+                        </select>
+                     </div>
+                     <div class="container-select-wraper">
+                        <div class="select-wraper">
+                           <select name="language" id="" class="select">
                               <option value="">Arabic</option>
                               <option value="">Kurdish</option>
                               <option value="">English</option>
                            </select>
-                        </li>
-                        <li>
-                           <select name="" id="">
+                        </div>
+                        <div class="select-wraper">
+                           <select name="language" id="" class="select">
                               <option value="">Kurdish</option>
                               <option value="">English</option>
                               <option value="">Arabic</option>
                            </select>
-                        </li>
-                        <li><img src="/img/basket.png" alt="delete"></li>
-                        <li><button>Add</button></li>
-                     </ul>
+                        </div>
+                        <div class="img-basket"><img src="/img/basket.png" alt="delete"></div>
+                        <div class="btn-add"><button><span>+</span>ADD</button></div>
+                     </div>
                   </div>
                </div>
             </div>
          </section>
 
-         <section class="fourth-container">
-            <div class="fourth-container-img">
-               <img src="img/3.png" alt="3">
-            </div>
-            <div class="fourth-container-other">
-               <div><p class="title">Select your desired tone</p></div>
-               <ul class="input-list">
-                  <li>
-                     <input type="radio" id="radio-btn-first" class="radio-btn-first radio" name="fourth-container-other-radio">
-                     <label for="radio-btn-first"><img src="/img/friendly-btn.png" class="label-img radio-btn-first-img" alt=""></label>
-                  </li>
-                  <li>
-                     <input type="radio" id="radio-btn-second" class="radio-btn-second radio" name="fourth-container-other-radio">
-                     <label for="radio-btn-second"><img src="img/media-btn.png" class="label-img radio-btn-second-img" alt=""></label>
-                  </li>
-                  <li>
-                     <input type="radio" id="radio-btn-third" class="radio-btn-third radio" name="fourth-container-other-radio">
-                     <label for="radio-btn-third"><img src="/img/corporate-btn.png" class="label-img radio-btn-third-img" alt=""></label>
-                  </li>
-               </ul>
+         <section class="common-container">
+            <div class="fourth-container">
+                  <div class="container-img">
+                     <img src="img/3.png" alt="3">
+                  </div>
+                  <div class="fourth-container-other">
+                     <div><p class="title">Select your desired tone</p></div>
+                     <ul class="input-list">
+                        <li>
+                           <input type="radio" id="radio-btn-first" class="radio-btn-first radio" name="fourth-container-other-radio">
+                           <label for="radio-btn-first"><img src="/img/friendly-btn.png" class="label-img radio-btn-first-img" alt=""></label>
+                        </li>
+                        <li>
+                           <input type="radio" id="radio-btn-second" class="radio-btn-second radio" name="fourth-container-other-radio">
+                           <label for="radio-btn-second"><img src="img/media-btn.png" class="label-img radio-btn-second-img" alt=""></label>
+                        </li>
+                        <li>
+                           <input type="radio" id="radio-btn-third" class="radio-btn-third radio" name="fourth-container-other-radio">
+                           <label for="radio-btn-third"><img src="/img/corporate-btn.png" class="label-img radio-btn-third-img" alt=""></label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+         
+            <div class="fifth-container">
+               <div class="container-img">
+                  <img src="img/4.png" alt="4">
+               </div>
+               <div class="fifth-container-other">
+                  <p class="title">Tell us how urgent this job is</p>
+                  <input type="range" class="range" min="1" max="30">
+               </div>
+               <div class="timeline">
+                  <div class="time-line-img">
+                        <img src="img/info.png" alt="info">
+                  </div>
+                  <div class="time-line-lorem">
+                        <p>TIMELINE INFO</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum expedita ex natus aut repudiandae.</p>
+                  </div> 
+               </div>
             </div>
          </section>
+         <section class="six-container">
+            <div class="container-img">
+               <img src="img/5.png" alt="5">
+            </div>
+            <div class="six-container-other">
+                  <div class="six-container-other-first block">
+                     <p class="title">Sign up and choose a payment method</p>
+                     <p>Already have an account with us?<a href="#">Sign in.</a></p>
+                  </div>
+                  <div class="six-container-other-second block">
+                     <p>FULL NAME</p>
+                     <input type="text" name="" id="" required>
+                  </div>
+                  <div class="six-container-other-third block">
+                     <p>EMAIL ADRESS</p>
+                     <p>CHOOSE A PASSWORD</p>
+                  </div>
+                  <div class="six-container-other-fourth block">
+                     <input type="email" name="" id="" required>
+                     <input type="password" name="" id="" required>
+                  </div>
+                  <div class="six-container-other-fifth block">
+                     <input type="radio" name="pay" id="visa-pay" class="btn-a radio">
+                     <label for="visa-pay"><img src="img/visa.png" alt="visa" class="btn-a-img six-container-img"></label>
+                     <input type="radio" name="pay" id="paypall-pay" class="btn-b radio">
+                     <label for="paypall-pay"><img src="img/paypall.png" alt="paypall" class="btn-b-img six-container-img"></label>
+                     <input type="radio" name="pay" id="amazon-pay" class="btn-c radio">
+                     <label for="amazon-pay"><img src="img/amazon.png" alt="amazon-pay" class="btn-c-img six-container-img"></label>
+                  </div>
+                  <div>
+                     <p>CARD NUMBER</p>
+                     <p>EXPIRY DATE</p>
+                     <p>CODE</p>
+                  </div>
+                  <div>
 
-         <section class="fifth-container">
-            <div>
-               <img src="img/4.png" alt="4">
+                  </div>
             </div>
          </section>
 
          <footer>
-
+            <input type="checkbox" name="" id="agree-btn" class="footer-item">
+            <label for="agree-btn" class="footer-item">
+               <p>I agree to the</p>
+            </label>
+            <a href="#">Terms & Conditions</a>
+            <input type="submit" value="" class="button-first button footer-item">
+            <input type="button" value="" class="button-second button footer-item">
          </footer>
       </form>
    </div>
