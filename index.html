@@ -33,7 +33,7 @@
                   </table>
                   <div class="header-button">
                      <input type="submit" value="" class="button button-first">
-                     <button class="button button-second"></button>
+                     <input type="button" class="button button-second" value="">
                   </div>
                </div>
                <div class="help-center">
@@ -118,7 +118,7 @@
                   </div>
                   <div class="third-container-other-block-second">
                      <div class="select-wraper">
-                        <select name="language" id="" class="select">
+                        <select name="language" id="select" class="select">
                            <option value="">English</option>
                            <option value="">Arabic</option>
                            <option value="">Kurdish</option>
@@ -126,21 +126,21 @@
                      </div>
                      <div class="container-select-wraper">
                         <div class="select-wraper">
-                           <select name="language" id="" class="select">
+                           <select name="language" id="select" class="select">
                               <option value="">Arabic</option>
                               <option value="">Kurdish</option>
                               <option value="">English</option>
                            </select>
                         </div>
                         <div class="select-wraper">
-                           <select name="language" id="" class="select">
+                           <select name="language" id="select" class="select">
                               <option value="">Kurdish</option>
                               <option value="">English</option>
                               <option value="">Arabic</option>
                            </select>
                         </div>
                         <div class="img-basket"><img src="/img/basket.png" alt="delete"></div>
-                        <div class="btn-add"><button><span>+</span>ADD</button></div>
+                        <div class="btn-add"><input type="button" class="button" value="+ ADD"></div>
                      </div>
                   </div>
                </div>
@@ -157,15 +157,15 @@
                      <ul class="input-list">
                         <li>
                            <input type="radio" id="radio-btn-first" class="radio-btn-first radio" name="fourth-container-other-radio">
-                           <label for="radio-btn-first"><img src="/img/friendly-btn.png" class="label-img radio-btn-first-img" alt=""></label>
+                           <label for="radio-btn-first"><img src="/img/friendly-btn.png" class="label-img radio-btn-first-img" alt="friendly-btn"></label>
                         </li>
                         <li>
                            <input type="radio" id="radio-btn-second" class="radio-btn-second radio" name="fourth-container-other-radio">
-                           <label for="radio-btn-second"><img src="img/media-btn.png" class="label-img radio-btn-second-img" alt=""></label>
+                           <label for="radio-btn-second"><img src="img/media-btn.png" class="label-img radio-btn-second-img" alt="media-btn"></label>
                         </li>
                         <li>
                            <input type="radio" id="radio-btn-third" class="radio-btn-third radio" name="fourth-container-other-radio">
-                           <label for="radio-btn-third"><img src="/img/corporate-btn.png" class="label-img radio-btn-third-img" alt=""></label>
+                           <label for="radio-btn-third"><img src="/img/corporate-btn.png" class="label-img radio-btn-third-img" alt="corporate-btn"></label>
                         </li>
                      </ul>
                   </div>
@@ -177,7 +177,7 @@
                </div>
                <div class="fifth-container-other">
                   <p class="title">Tell us how urgent this job is</p>
-                  <input type="range" class="range" min="1" max="30">
+                  <input type="range" class="range" min="0" max="10" step="1">
                </div>
                <div class="timeline">
                   <div class="time-line-img">
@@ -195,38 +195,40 @@
                <img src="img/5.png" alt="5">
             </div>
             <div class="six-container-other">
-                  <div class="six-container-other-first block">
-                     <p class="title">Sign up and choose a payment method</p>
-                     <p>Already have an account with us?<a href="#">Sign in.</a></p>
-                  </div>
-                  <div class="six-container-other-second block">
-                     <p>FULL NAME</p>
-                     <input type="text" name="text" id="text" minlength="3" title="John Smith" maxlength="30" pattern="^([a-zA-Z]{2,}\s[a-zA-z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)" required>
-                  </div>
-                  <div class="six-container-other-third block">
-                     <p>EMAIL ADRESS</p>
-                     <p>CHOOSE A PASSWORD</p>
-                  </div>
-                  <div class="six-container-other-fourth block">
-                     <input type="email" name="email" id="email" title="name@domain.etc" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                     <input type="password" name="password" id="password" title="Minimum 6 characters" minlength="6" required>
-                  </div>
-                  <div class="six-container-other-fifth block">
-                     <input type="radio" name="pay" id="visa-pay" class="btn-a radio">
-                     <label for="visa-pay"><img src="img/visa.png" alt="visa" class="btn-a-img six-container-img"></label>
-                     <input type="radio" name="pay" id="paypall-pay" class="btn-b radio">
-                     <label for="paypall-pay"><img src="img/paypall.png" alt="paypall" class="btn-b-img six-container-img"></label>
-                     <input type="radio" name="pay" id="amazon-pay" class="btn-c radio">
-                     <label for="amazon-pay"><img src="img/amazon.png" alt="amazon-pay" class="btn-c-img six-container-img"></label>
-                  </div>
-                  <div>
-                     <p>CARD NUMBER</p>
-                     <p>EXPIRY DATE</p>
-                     <p>CODE</p>
-                  </div>
-                  <div>
-
-                  </div>
+               <div class="six-container-other-first block">
+                  <p class="title">Sign up and choose a payment method</p>
+                  <p>Already have an account with us?<a href="#">Sign in.</a></p>
+               </div>
+               <div class="six-container-other-second block">
+                  <p>FULL NAME</p>
+                  <input type="text" name="text" class="text input" id="text" minlength="3" title="John Smith" maxlength="30" pattern="^([a-zA-Z]{2,}\s[a-zA-z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)" required>
+               </div>
+               <div class="six-container-other-third block">
+                  <p>EMAIL ADRESS</p>
+                  <p>CHOOSE A PASSWORD</p>
+               </div>
+               <div class="six-container-other-fourth block">
+                  <input type="email" name="email" class="email input" id="email" title="name@domain.etc" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                  <input type="password" name="password" class="pass input" id="password" title="Minimum 6 characters" minlength="6" required>
+               </div>
+               <div class="six-container-other-fifth block">
+                  <input type="radio" name="pay" id="visa-pay" class="btn-a radio">
+                  <label for="visa-pay"><img src="img/visa.png" alt="visa" tabindex="0" class="btn-a-img six-container-img"></label>
+                  <input type="radio" name="pay" id="paypall-pay" class="btn-b radio">
+                  <label for="paypall-pay"><img src="img/paypall.png" alt="paypall" tabindex="0" class="btn-b-img six-container-img"></label>
+                  <input type="radio" name="pay" id="amazon-pay" class="btn-c radio">
+                  <label for="amazon-pay"><img src="img/amazon.png" alt="amazon-pay" tabindex="0" class="btn-c-img six-container-img"></label>
+               </div>
+               <div class="six-container-other-title">
+                  <p>CARD NUMBER</p>
+                  <p>EXPIRY DATE</p>
+                  <p>CODE</p>
+               </div>
+               <div class="six-container-other-input">
+                  <input type="text" class="input" placeholder="please enter your card number" title="numbers (0-9)" pattern="[0-9]{13,16}" minlength="16" maxlength="16" name="text" id="text" required>
+                  <input type="text" class="input date" pattern="(0[1-9]|[12][0-9]|3[01])[- //](0[1-9]|1[012])[- //](19|20)\d\d" maxlength="10" placeholder="DD/MM/YY" name="text" id="text" required>
+                  <input type="text" class="input" placeholder="CVV2/CVC2" pattern="^(\d){1,13}$" minlength="3" maxlength="3" name="text" id="text" required>
+               </div>
             </div>
          </section>
 
