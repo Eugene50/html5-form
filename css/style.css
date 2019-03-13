@@ -24,6 +24,49 @@
     .btn-add .button span {
       margin-right: 7px; }
 
+.range {
+  position: relative; }
+
+.range-text {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  margin-left: -90px;
+  font-size: 0.7em;
+  color: #9c9c9c;
+  margin-top: 5px; }
+
+.range-input::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  display: block;
+  background: grey;
+  border-radius: 360px;
+  margin-top: 5px; }
+
+.range-input::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  display: block;
+  background: grey;
+  border-radius: 360px;
+  margin-top: 5px;
+  right: 50px; }
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  z-index: 2;
+  cursor: pointer; }
+
 p {
   margin: 0;
   padding: 0;
