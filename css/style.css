@@ -451,10 +451,13 @@ body {
         border-radius: 5px; }
       body .container footer .button-first {
         background-image: url(/img/place_order.png);
-        background-size: cover; }
+        background-size: cover;
+        cursor: pointer;
+        border: solid; }
       body .container footer .button-second {
         background-image: url(/img/print_a_qoute.png);
-        background-size: cover; }
+        background-size: cover;
+        cursor: pointer; }
       body .container footer .footer-item {
         margin-left: 20px; }
       body .container footer a {

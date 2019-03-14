@@ -160,11 +160,13 @@ body {
                   .button-first {
                      background-image: url(/img/place_order.png);
                      background-size: cover;
+                     cursor: pointer;
                   }
                  
                   .button-second {
                      background-image: url(/img/print_a_qoute.png);
                      background-size: cover;
+                     cursor: pointer;
                  }
                }
             }
@@ -676,11 +678,13 @@ body {
          .button-first {
             background-image: url(/img/place_order.png);
             background-size: cover;
+            cursor: pointer;
          }
         
          .button-second {
             background-image: url(/img/print_a_qoute.png);
             background-size: cover;
+            cursor: pointer;
         }
 
         .footer-item {
