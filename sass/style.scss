@@ -158,12 +158,12 @@ body {
                   }
 
                   .button-first {
-                     background-image: url(/img/place_order.png);
+                     background-image: url(img/place_order.png);
                      background-size: cover;
                   }
                  
                   .button-second {
-                     background-image: url(/img/print_a_qoute.png);
+                     background-image: url(img/print_a_qoute.png);
                      background-size: cover;
                  }
                }
@@ -313,6 +313,10 @@ body {
                .delete-cell {
                   padding-left: 17px;
                   text-align: center;
+
+                  .basket {
+                     cursor: pointer;
+                  }
                }
             }
          }
@@ -392,7 +396,7 @@ body {
                      content: '';
                      display: block;
                      position: absolute;
-                     background-image: url(/img/arrow-down.png);
+                     background-image: url(img/arrow-down.png);
                      background-size: 25px;
                      top: 7px;
                      width: 25px;
@@ -670,12 +674,12 @@ body {
          }
 
          .button-first {
-            background-image: url(/img/place_order.png);
+            background-image: url(img/place_order.png);
             background-size: cover;
          }
         
          .button-second {
-            background-image: url(/img/print_a_qoute.png);
+            background-image: url(img/print_a_qoute.png);
             background-size: cover;
         }
 
