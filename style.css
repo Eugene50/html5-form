@@ -129,11 +129,11 @@ body {
               margin: 5px;
               border-radius: 5%; }
             body .container header .header-container .header-table .header-button .button-first {
-              background-image: url(/img/place_order.png);
+              background-image: url(img/place_order.png);
               background-size: cover;
               cursor: pointer; }
             body .container header .header-container .header-table .header-button .button-second {
-              background-image: url(/img/print_a_qoute.png);
+              background-image: url(img/print_a_qoute.png);
               background-size: cover;
               cursor: pointer; }
         body .container header .header-container .help-center {
@@ -286,7 +286,7 @@ body {
             content: '';
             display: block;
             position: absolute;
-            background-image: url(/img/arrow-down.png);
+            background-image: url(img/arrow-down.png);
             background-size: 25px;
             top: 7px;
             width: 25px;
@@ -452,11 +452,11 @@ body {
         margin: 5px;
         border-radius: 5px; }
       body .container footer .button-first {
-        background-image: url(/img/place_order.png);
+        background-image: url(img/place_order.png);
         background-size: cover;
         cursor: pointer; }
       body .container footer .button-second {
-        background-image: url(/img/print_a_qoute.png);
+        background-image: url(img/print_a_qoute.png);
         background-size: cover;
         cursor: pointer; }
       body .container footer .footer-item {
