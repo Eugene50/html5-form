@@ -428,15 +428,17 @@ body {
             .fifth-container-other {
                margin-left: 35px;
 
-               input[type='range'] {
+              /*  input[type='range'] {
                   margin-left: -40px;
                   width: 350px;
                   appearance: none;
                   background-color: #9a905d;
-               }
+               } */
 
                .range {
                   position: relative;
+                  width: 350px;
+                  margin-left: -40px;
                }
 
                .range-text {
@@ -450,7 +452,19 @@ body {
 
                   :nth-child(2) {
                      color: orange;
+                     margin-left: 5.2px;
                   }
+               }
+
+               .range-input {
+                  -webkit-appearance: none;
+                  z-index: 0;
+                  width: 350px; 
+                  margin-left: 0px;
+               }
+
+               .range-input:focus {
+                  outline: none;
                }
 
                .range-input::before {
@@ -461,7 +475,8 @@ body {
                   display: block;
                   background: grey;
                   border-radius: 360px;
-                  margin-top: 5px;
+                  top: 0;
+                  left: 0px;
                }
 
                .range-input::after {
@@ -472,19 +487,26 @@ body {
                   display: block;
                   background: grey;
                   border-radius: 360px;
-                  margin-top: 5px;
-                  right: 50px;
+                  top: 0;
+                  right: 0;
+               }
+
+               .range-input::-webkit-slider-runnable-track {
+                  background-color: rgb(212, 212, 212);
+                  height: 5px;                  
                }
 
                .range-input::-webkit-slider-thumb {
                   -webkit-appearance: none;
                   appearance: none;
                   position: relative;
-                  width: 20px;
-                  height: 20px;
+                  width: 15px;
+                  height: 15px;
                   background-color: orange;
                   z-index: 2;
-               }               
+                  border-radius: 360%;
+                  top: -5px;
+               }
             }
 
             .timeline {
